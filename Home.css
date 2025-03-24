@@ -1,0 +1,102 @@
+body {
+  margin: 0px;
+  background-color: #f1e8e8;
+}
+
+.pixel-text {
+  font-family: "Press Start 2P", cursive;
+  font-size: 75px;
+  background-image: linear-gradient(
+    to right,
+    rgb(46, 187, 46),
+    rgb(57, 137, 57),
+    #37c200,
+    #226b25
+  ); /* Red to blue gradient */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  text-align: center;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #0d0a0a;
+}
+
+#logo {
+  padding: 0 0 0 25px;
+}
+
+#main-nav-comp {
+  text-align: right;
+  color: white;
+  padding: 15px;
+  font-family: "Tektur", sans-serif;
+  font-size: 30px;
+}
+
+#main-nav li:hover {
+  color: rgb(10, 210, 0);
+}
+
+#main-nav ul ul {
+  display: none;
+  position: absolute;
+}
+
+#main-nav li:hover ul {
+  display: block;
+  position: absolute;
+  background-color: #000000;
+  float: left;
+  padding: 0;
+}
+
+#main-nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
+
+/* #contact {
+    text-align: left;
+    background-color: rgb(13, 165, 13);
+    width: 25%;
+    float: right;
+    margin: 10px;
+    padding-left: 10px;
+} */
+
+#contact-name:focus {
+  background-color: crimson;
+  color: white;
+}
+
+/* For Tablets */
+/* @media (min-width: 768px) {
+  body {
+    background-color: #0d0a0a;
+    font-size: 16px;
+  }
+} */
+
+/* For Mobile */
+@media (max-width: 480px) {
+  body {
+    background-color: red;
+    font-size: 14px;
+  }
+
+  #main-nav,
+  #main-nav-comp ul {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+}
